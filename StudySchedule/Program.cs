@@ -10,6 +10,8 @@ namespace StudySchedule
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Расписание занятий колледжа");
+            Console.WriteLine("Роман");
         }
     }
 }
