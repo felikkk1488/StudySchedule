@@ -1,10 +1,13 @@
-﻿using StudySchedule.Data;
-
-namespace StudySchedule.Logic;
+﻿namespace StudySchedule.Logic;
 
 public class LessonService
 {
-    private readonly LessonRepository _repository = new();
+    private readonly ILessonRepository _repository;
+
+    public LessonService(ILessonRepository repository)
+    {
+        _repository = repository;
+    }
 
     public List<Lesson> GetImportant()
     {
