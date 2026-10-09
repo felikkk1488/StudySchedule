@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StudySchedule.Logic\StudySchedule.Logic.csproj" />
+    <ProjectReference Include="..\StudySchedule.Data\StudySchedule.Data.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,6 +1,8 @@
-﻿namespace StudySchedule.Data;
+﻿using StudySchedule.Logic;
 
-public class LessonRepository
+namespace StudySchedule.Data;
+
+public class LessonRepository : ILessonRepository
 {
     private readonly List<Lesson> _lessons = new()
     {

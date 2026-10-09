@@ -1,6 +1,9 @@
-﻿using StudySchedule.Logic;
+﻿using StudySchedule.Data;
+using StudySchedule.Logic;
 
-var service = new LessonService();
+ILessonRepository repository = new LessonRepository();
+
+var service = new LessonService(repository);
 
 Console.WriteLine("Отобранные записи:");
 
