@@ -15,5 +15,10 @@ public class LessonRepository : ILessonRepository
     {
         return _lessons;
     }
+
+    public void Add(Lesson item)
+    {
+        _lessons.Add(item);
+    }
 }
 

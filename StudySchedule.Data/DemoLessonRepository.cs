@@ -12,4 +12,8 @@ public class DemoLessonRepository : ILessonRepository
             new Lesson { Id = 101, Subject = "Демо: не попадёт в отбор", Room = "101" }
         };
     }
+    public void Add(Lesson item)
+    {
+        // Демонстрационное хранилище доступно только для чтения
+    }
 }
